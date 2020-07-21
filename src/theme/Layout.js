@@ -1,8 +1,9 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 
+import Navigation from '../components/Navigation'
+
 import { PrefersReducedMotion, SiteResets, Typography } from '../styles/base'
-import Head from './Head'
 
 const GlobalStyle = createGlobalStyle`
   ${PrefersReducedMotion}
@@ -12,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
 
 const Layout = ({ children }) => (
   <div className="layout">
-    <Head/>
     <GlobalStyle />
+    <Navigation/>
     {children}
   </div>
 )

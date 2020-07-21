@@ -4,7 +4,7 @@ import Head from '../theme/Head'
 
 export default () => (
   <Layout>
-    <Head />
-    <h1>Hello world!</h1>
+    <Head pageTitle="About Me" />
+    <h1>About page here</h1>
   </Layout>
 )
