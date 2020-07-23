@@ -12,11 +12,11 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = ({ children }) => (
-  <div className="layout">
+  <>
     <GlobalStyle />
     <Navigation />
-    {children}
-  </div>
+    <div className="layout">{children}</div>
+  </>
 )
 
 export default Layout

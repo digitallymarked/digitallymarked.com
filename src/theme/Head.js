@@ -3,18 +3,21 @@ import { Helmet } from 'react-helmet'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Head = ({ pageTitle }) => {
-  const { title, description } = useSiteMetadata()
-  const meta = {
+  const { title, description, siteUrl } = useSiteMetadata()
+  const seo = {
     title: pageTitle ? `${pageTitle} | ${title}` : title,
   }
+  // const url = postMeta.slug ? `${siteUrl}/${postMeta.slug}/` : siteUrl;
+  const url = siteUrl
   return (
-    <Helmet title={meta.title}>
+    <Helmet>
+      <title>{seo.title}</title>
       <meta name="description" content={description} />
       <link
         href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
       />
-
+      <link rel="canonical" href={url} />
       {/* Favicon stuff from realfavicongenerator.net */}
       <link
         rel="apple-touch-icon"

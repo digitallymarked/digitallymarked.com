@@ -10,6 +10,7 @@ module.exports = {
     description: `
       This is the personal digital space of Mark Markov. You can find both fun and quirky stuff as well as some more serious and inspirational ones.
     `,
+    siteUrl: 'https://www.digitallymarked.com/',
     nav: [
       {
         name: 'Home',
