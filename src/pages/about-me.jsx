@@ -1,6 +1,5 @@
 import React from 'react'
-import Layout from '../theme/Layout'
-import Head from '../theme/Head'
+import { Layout, Head } from '../components'
 
 export default () => (
   <Layout>
