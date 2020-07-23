@@ -20,6 +20,10 @@ module.exports = {
         name: 'About Me',
         link: '/about-me',
       },
+      {
+        name: 'My Files',
+        link: '/my-files',
+      },
     ],
   },
   plugins: [
@@ -30,7 +34,15 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-mdx`,
   ],
 }
