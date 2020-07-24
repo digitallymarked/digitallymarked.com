@@ -10,7 +10,7 @@ const LayoutWrapper = styled.div`
   text-align: center;
 `
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <>
     <GlobalStyle />
     <LayoutWrapper>
@@ -20,4 +20,4 @@ const Layout = ({ children }) => (
   </>
 )
 
-export default Layout
+// export default Layout

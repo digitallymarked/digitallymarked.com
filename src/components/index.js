@@ -1,2 +1,2 @@
-export { default as SEO } from './SEO'
-export { default as Layout } from './Layout'
+export { SEO } from './SEO'
+export { Layout } from './Layout'
