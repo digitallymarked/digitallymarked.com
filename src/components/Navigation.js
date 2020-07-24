@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useSiteMetadata } from '../hooks/use-site-metadata'
 import styled from 'styled-components'
+
+import { useSiteMetadata } from '../hooks/use-site-metadata'
+
 import { headerFont } from '../styles/base/variables'
 
 const NavList = styled.ul`

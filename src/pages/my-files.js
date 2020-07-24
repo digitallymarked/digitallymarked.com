@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+
 import { Layout, SEO } from '../components'
 
 const Table = styled.table`
