@@ -1,15 +1,25 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import {Layout, Head} from '../components'
+import styled from 'styled-components'
+import { Layout, SEO } from '../components'
+
+const Table = styled.table`
+  margin: 0 auto;
+  text-align: left;
+  & td,
+  th {
+    padding: 4pt;
+  }
+`
 
 export default function MyFiles({ data }) {
   console.log(data)
   return (
     <Layout>
-      <Head />
+      <SEO title="My Files" />
       <div>
         <h1>My Site's Files</h1>
-        <table>
+        <Table>
           <thead>
             <tr>
               <th>relativePath</th>
@@ -28,7 +38,7 @@ export default function MyFiles({ data }) {
               </tr>
             ))}
           </tbody>
-        </table>
+        </Table>
       </div>
     </Layout>
   )

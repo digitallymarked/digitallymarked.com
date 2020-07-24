@@ -1,9 +1,9 @@
 import React from 'react'
-import { Layout, Head } from '../components'
+import { Layout, SEO } from '../components'
 
 export default () => (
   <Layout>
-    <Head pageTitle="404" />
+    <SEO pageTitle="404" />
     <h1>404... Ooooops</h1>
   </Layout>
 )

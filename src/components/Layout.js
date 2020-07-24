@@ -1,14 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Navigation from './Navigation'
-
 import GlobalStyle from '../styles'
+
+const LayoutWrapper = styled.div`
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+`
 
 const Layout = ({ children }) => (
   <>
     <GlobalStyle />
-    <Navigation />
-    <div className="layout">{children}</div>
+    <LayoutWrapper>
+      <Navigation />
+      {children}
+    </LayoutWrapper>
   </>
 )
 
