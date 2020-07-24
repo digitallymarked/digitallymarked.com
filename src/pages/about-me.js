@@ -3,7 +3,7 @@ import { Layout, SEO } from '../components'
 
 export default () => (
   <Layout>
-    <SEO pageTitle="404" />
-    <h1>404... Ooooops</h1>
+    <SEO title="About Me" />
+    <h1>About page here</h1>
   </Layout>
 )
