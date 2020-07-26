@@ -2,9 +2,9 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
-import { useSiteMetadata } from '../hooks/use-site-metadata'
+import { useSiteMetadata } from '../utils'
 
-import { headerFont } from '../utils/variables'
+import { headerFont } from '../styles'
 
 const Pages = () => {
   const { nav } = useSiteMetadata()
