@@ -32,9 +32,10 @@ const Posts = () => {
       }
     }
   `)
+  const posts = allMdx.nodes
   return (
     <>
-      {allMdx.nodes.map(post => {
+      {posts.map(post => {
         const { title, slug } = post.frontmatter
         return (
           <li key={title}>
