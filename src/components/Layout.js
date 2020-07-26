@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import 'normalize.css'
 
 import Navigation from './Navigation'
-import GlobalStyle from '../styles'
+import GlobalStyle from '../utils'
 
 const LayoutWrapper = styled.div`
   display: grid;
@@ -19,5 +20,3 @@ export const Layout = ({ children }) => (
     </LayoutWrapper>
   </>
 )
-
-// export default Layout

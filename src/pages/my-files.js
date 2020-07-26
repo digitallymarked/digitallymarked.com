@@ -4,17 +4,24 @@ import styled from 'styled-components'
 
 import { Layout, SEO } from '../components'
 
-const Table = styled.table`
-  margin: 0 auto;
-  text-align: left;
-  & td,
-  th {
-    padding: 4pt;
+export const query = graphql`
+  query {
+    allFile {
+      edges {
+        node {
+          relativePath
+          prettySize
+          extension
+          birthTime(fromNow: true)
+        }
+      }
+    }
   }
 `
 
-export default function MyFiles({ data }) {
+const MyFiles = ({ data }) => {
   console.log(data)
+  const results = data.allFile.edges
   return (
     <Layout>
       <SEO title="My Files" />
@@ -30,7 +37,7 @@ export default function MyFiles({ data }) {
             </tr>
           </thead>
           <tbody>
-            {data.allFile.edges.map(({ node }, index) => (
+            {results.map(({ node }, index) => (
               <tr key={index}>
                 <td>{node.relativePath}</td>
                 <td>{node.prettySize}</td>
@@ -44,18 +51,13 @@ export default function MyFiles({ data }) {
     </Layout>
   )
 }
+export default MyFiles
 
-export const query = graphql`
-  query {
-    allFile {
-      edges {
-        node {
-          relativePath
-          prettySize
-          extension
-          birthTime(fromNow: true)
-        }
-      }
-    }
+const Table = styled.table`
+  margin: 0 auto;
+  text-align: left;
+  & td,
+  th {
+    padding: 4pt;
   }
 `
