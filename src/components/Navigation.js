@@ -4,24 +4,7 @@ import styled from 'styled-components'
 
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
-import { headerFont } from '../styles/base/variables'
-
-const NavList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 0 auto;
-  & li {
-    margin: 8pt;
-    font-size: 24pt;
-    font-family: ${headerFont};
-  }
-`
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`
+import { headerFont } from '../utils/variables'
 
 const Pages = () => {
   const { nav } = useSiteMetadata()
@@ -49,9 +32,10 @@ const Posts = () => {
       }
     }
   `)
+  const posts = allMdx.nodes
   return (
     <>
-      {allMdx.nodes.map(post => {
+      {posts.map(post => {
         const { title, slug } = post.frontmatter
         return (
           <li key={title}>
@@ -77,3 +61,20 @@ const Navigation = () => {
 }
 
 export default Navigation
+
+const NavList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0 auto;
+  & li {
+    margin: 8pt;
+    font-size: 24pt;
+    font-family: ${headerFont};
+  }
+`
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
