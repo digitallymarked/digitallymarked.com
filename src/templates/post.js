@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import { Layout, SEO, InnerLink, OuterLink } from '../components'
+import { Layout, SEO, InnerLink, OuterLink, Breadcrumbs } from '../components'
 
 export const data = graphql`
   query($slug: String!) {
@@ -22,6 +22,7 @@ const Post = ({ data: { mdx } }) => {
   return (
     <Layout>
       <SEO title={mdx.frontmatter.title} />
+      <Breadcrumbs location={mdx.frontmatter.title} />
       <h1>{mdx.frontmatter.title}</h1>
       <h3>{mdx.frontmatter.date}</h3>
       <MDXProvider components={shortcodes}>
