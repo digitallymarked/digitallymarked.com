@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-import { headerFont, bodyFont } from './variables'
+import { headerFont, bodyFont, primary } from './variables'
 
 export const Typography = css`
   body {
@@ -10,5 +10,9 @@ export const Typography = css`
     h3 {
       font-family: ${headerFont};
     }
+  }
+  a {
+    text-decoration: none;
+    color: ${primary};
   }
 `
