@@ -1,7 +1,8 @@
 import React from 'react'
-import { useSiteMetadata } from '../../utils'
-import PostsLink from './PostsLink'
 import { Link } from 'gatsby'
+import { useSiteMetadata } from '../../utils'
+
+import PostsLink from './PostsLink'
 import { NavListItem } from './Styled'
 
 const PageLinks = () => {

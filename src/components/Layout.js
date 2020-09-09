@@ -24,4 +24,5 @@ const LayoutWrapper = styled.div`
   display: grid;
   margin: 0 auto;
   text-align: center;
+  padding-top: 16pt;
 `

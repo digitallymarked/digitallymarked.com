@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
-import { headerFont } from '../../styles'
+import { headerFont, primary, light } from '../../styles'
 
 export const NavList = styled.ul`
   display: flex;
@@ -17,9 +16,12 @@ export const NavList = styled.ul`
 
 export const NavListItem = styled.li`
   & > a {
+    padding: 4pt 16pt;
+    border-radius: 4pt;
     text-decoration: none;
     &.active {
-      text-decoration: underline;
+      color: ${light};
+      background-color: ${primary};
     }
   }
 `
@@ -28,5 +30,3 @@ export const NavRow = styled.div`
   flex-direction: row;
   justify-content: center;
 `
-
-export const NavLink = styled(Link)``

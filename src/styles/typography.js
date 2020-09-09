@@ -12,7 +12,6 @@ export const Typography = css`
     }
   }
   a {
-    text-decoration: none;
     color: ${primary};
   }
 `
