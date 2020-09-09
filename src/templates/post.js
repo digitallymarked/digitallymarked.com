@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import { Layout, SEO } from '../components'
+import { Layout, SEO, InnerLink, OuterLink } from '../components'
 
 export const data = graphql`
   query($slug: String!) {
@@ -16,7 +16,7 @@ export const data = graphql`
     }
   }
 `
-const shortcodes = {}
+const shortcodes = { InnerLink, OuterLink }
 
 const Post = ({ data: { mdx } }) => {
   return (

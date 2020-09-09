@@ -18,6 +18,10 @@ module.exports = {
         name: 'My Files',
         link: '/my-files',
       },
+      {
+        name: 'Posts',
+        link: '/posts',
+      },
     ],
   },
   plugins: [
@@ -35,14 +39,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/Layout.js'),
-        },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+              showCaptions: [`title`],
+              tracedSVG: {
+                color: `red`,
+              },
             },
           },
         ],
