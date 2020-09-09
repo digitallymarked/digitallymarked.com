@@ -1,15 +1,13 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { primary, light } from '../styles'
+import { lightDark, primary } from '../styles'
 
 export const InnerLink = styled(Link)`
   text-decoration: none;
-  &.active {
-    text-decoration: underline;
-  }
+  border-bottom: 1pt solid ${primary};
   &:hover {
-    background-color: ${primary};
-    color: ${light};
+    color: ${lightDark};
+    border-bottom: 1pt solid ${lightDark};
   }
 `
 export const OuterLink = styled.a`

@@ -30,10 +30,10 @@ const MyFiles = ({ data }) => {
         <Table>
           <thead>
             <tr>
-              <th>relativePath</th>
-              <th>prettySize</th>
-              <th>extension</th>
-              <th>birthTime</th>
+              <th>Relative Path</th>
+              <th>Size</th>
+              <th>Extension</th>
+              <th>Created</th>
             </tr>
           </thead>
           <tbody>

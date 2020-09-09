@@ -7,14 +7,12 @@ export const NavList = styled.ul`
   flex-direction: column;
   list-style-type: none;
   margin: 0 auto;
-  li {
-    margin: 8pt;
-    font-size: 24pt;
-    font-family: ${headerFont};
-  }
 `
 
 export const NavListItem = styled.li`
+  margin: 8pt;
+  font-size: 24pt;
+  font-family: ${headerFont};
   & > a {
     padding: 4pt 16pt;
     border-radius: 4pt;

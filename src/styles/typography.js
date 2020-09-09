@@ -14,4 +14,8 @@ export const Typography = css`
   a {
     color: ${primary};
   }
+  ul,
+  ol {
+    list-style-type: none;
+  }
 `

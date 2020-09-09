@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { useSiteMetadata } from '../../utils'
 
 import PostsLink from './PostsLink'
-import { NavListItem } from './Styled'
+import * as S from './styles'
 
 const PageLinks = () => {
   const { nav } = useSiteMetadata()
@@ -11,15 +11,15 @@ const PageLinks = () => {
   return (
     <>
       {noPosts.map(item => (
-        <NavListItem key={item.name}>
+        <S.NavListItem key={item.name}>
           <Link to={item.link} activeClassName="active">
             {item.name}
           </Link>
-        </NavListItem>
+        </S.NavListItem>
       ))}
-      <NavListItem>
+      <S.NavListItem>
         <PostsLink to="/posts">Posts</PostsLink>
-      </NavListItem>
+      </S.NavListItem>
     </>
   )
 }

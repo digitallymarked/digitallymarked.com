@@ -10,7 +10,7 @@ export const Layout = ({ children }) => (
     <GlobalStyles />
     <LayoutWrapper>
       <Navigation />
-      <main>{children}</main>
+      <Main>{children}</Main>
     </LayoutWrapper>
   </>
 )
@@ -25,4 +25,10 @@ const LayoutWrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   padding-top: 16pt;
+`
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 75%;
 `
