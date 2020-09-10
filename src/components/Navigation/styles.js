@@ -4,9 +4,9 @@ import { headerFont, primary, light } from '../../styles'
 
 export const NavList = styled.ul`
   display: flex;
-  flex-direction: column;
   list-style-type: none;
   margin: 0 auto;
+  justify-content: center;
 `
 
 export const NavListItem = styled.li`
@@ -22,9 +22,4 @@ export const NavListItem = styled.li`
       background-color: ${primary};
     }
   }
-`
-export const NavRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 `

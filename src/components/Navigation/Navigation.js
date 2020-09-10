@@ -1,12 +1,10 @@
 import React from 'react'
 
-import PageLinks from './PageLinks'
+import NavLinks from './NavLinks'
 import * as S from './styles'
 
 export const Navigation = () => (
   <S.NavList>
-    <S.NavRow>
-      <PageLinks />
-    </S.NavRow>
+    <NavLinks />
   </S.NavList>
 )
