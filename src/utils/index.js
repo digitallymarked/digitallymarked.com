@@ -1,2 +1,2 @@
 export * from './useSiteMetadata'
-export * from './useImage'
+export * from './useSingleImage'

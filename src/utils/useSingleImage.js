@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-export const useImage = () => {
+export const useSingleImage = () => {
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(filter: { relativeDirectory: { eq: "images" } }) {
