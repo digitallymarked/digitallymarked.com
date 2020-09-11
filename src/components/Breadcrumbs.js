@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { InnerLink } from './Links'
+import * as S from './Links'
 
 export const Breadcrumbs = ({ location }) => (
   <Wrapper>
-    <InnerLink to="/posts">Posts</InnerLink>
+    <S.InnerLink to="/posts">Posts</S.InnerLink>
     <span>/</span>
     <span>{location}</span>
   </Wrapper>

@@ -46,7 +46,7 @@ module.exports = {
               linkImagesToOriginal: false,
               withWebp: true,
               tracedSVG: {
-                color: `red`,
+                color: `#0466c8`,
               },
             },
           },
