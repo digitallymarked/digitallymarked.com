@@ -4,5 +4,5 @@ module.exports = {
   "trailingComma": "es5",
   "arrowParens": "avoid",
   "semi": false,
-  "bracketSpacing": true
+  "bracketSpacing": true,
 }

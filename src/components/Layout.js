@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import 'normalize.css'
 
-import { Navigation } from './Navigation'
+import Navigation from './Navigation'
 import { PrefersReducedMotion, Typography } from '../styles'
 
 const Layout = ({ children }) => (

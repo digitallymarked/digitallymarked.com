@@ -24,6 +24,11 @@ module.exports = {
         ignoreRegExpLiterals: true,
       },
     ],
-    'react/prop-types': ['off'],
+    'react/prop-types': [
+      'warn',
+      {
+        skipUndeclared: true,
+      },
+    ],
   },
 }

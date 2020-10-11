@@ -1,3 +1,5 @@
-export * from './prefers-reduced-motion'
-export * from './typography'
+import PrefersReducedMotion from './prefers-reduced-motion'
+import Typography from './typography'
+
+export { PrefersReducedMotion, Typography }
 export * from './variables'

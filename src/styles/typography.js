@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 
 import { headerFont, bodyFont, primary } from './variables'
 
-export const Typography = css`
+const Typography = css`
   body {
     font-family: ${bodyFont};
     h1,
@@ -19,3 +19,4 @@ export const Typography = css`
     list-style-type: none;
   }
 `
+export default Typography
