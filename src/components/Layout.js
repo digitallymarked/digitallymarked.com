@@ -5,7 +5,7 @@ import 'normalize.css'
 import { Navigation } from './Navigation'
 import { PrefersReducedMotion, Typography } from '../styles'
 
-export const Layout = ({ children }) => (
+const Layout = ({ children }) => (
   <>
     <GlobalStyles />
     <LayoutWrapper>
@@ -14,6 +14,8 @@ export const Layout = ({ children }) => (
     </LayoutWrapper>
   </>
 )
+
+export default Layout
 
 const GlobalStyles = createGlobalStyle`
   ${PrefersReducedMotion}
