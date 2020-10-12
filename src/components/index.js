@@ -1,8 +1,6 @@
-import SEO from './SEO'
-import Layout from './Layout'
-import Image from './Image'
-import Button from './Button'
-import Breadcrumbs from './Breadcrumbs'
-
-export { SEO, Layout, Image, Button, Breadcrumbs }
+export { Breadcrumbs } from './Breadcrumbs'
+export { Button } from './Button'
+export { Image } from './Image'
+export { Layout } from './Layout'
 export * from './Links'
+export { SEO } from './SEO'

@@ -16,7 +16,7 @@ const FavIcons = () => (
   </>
 )
 
-const SEO = ({ description, lang, meta, title }) => {
+export const SEO = ({ description, lang, meta, title }) => {
   // Get the site title and descriptio from the GraphQL hook and set them to siteTitle and siteDescription
   const {
     title: siteTtitle,
@@ -78,8 +78,6 @@ const SEO = ({ description, lang, meta, title }) => {
     </Helmet>
   )
 }
-
-export default SEO
 
 SEO.defaultProps = {
   lang: `en`,

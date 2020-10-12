@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-const useSingleImage = () => {
+export const useSingleImage = () => {
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(filter: { relativeDirectory: { eq: "images" } }) {
@@ -21,5 +21,3 @@ const useSingleImage = () => {
   `)
   return allFile.edges
 }
-
-export default useSingleImage

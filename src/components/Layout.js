@@ -2,10 +2,10 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import 'normalize.css'
 
-import Navigation from './Navigation'
+import { Navigation } from './Navigation'
 import { PrefersReducedMotion, Typography } from '../styles'
 
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <>
     <GlobalStyles />
     <LayoutWrapper>
@@ -14,8 +14,6 @@ const Layout = ({ children }) => (
     </LayoutWrapper>
   </>
 )
-
-export default Layout
 
 const GlobalStyles = createGlobalStyle`
   ${PrefersReducedMotion}

@@ -30,5 +30,6 @@ module.exports = {
         skipUndeclared: true,
       },
     ],
+    'import/prefer-default-export': ['off'],
   },
 }

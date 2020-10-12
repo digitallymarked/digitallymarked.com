@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 
-const PrefersReducedMotion = css`
+export const PrefersReducedMotion = css`
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -10,5 +10,3 @@ const PrefersReducedMotion = css`
     }
   }
 `
-
-export default PrefersReducedMotion

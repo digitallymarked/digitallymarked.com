@@ -1,4 +1,2 @@
-import useSiteMetadata from './useSiteMetadata'
-import useSingleImage from './useSingleImage'
-
-export { useSiteMetadata, useSingleImage }
+export { useSingleImage } from './useSingleImage'
+export { useSiteMetadata } from './useSiteMetadata'
